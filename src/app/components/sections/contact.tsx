@@ -266,14 +266,14 @@ export default function Contact() {
                 <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     <div ref={leftContentRef}>
                         <h2 ref={titleRef} className="text-4xl font-bold mb-6">Send a message</h2>
-                        <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                        <p className="text-lg leading-relaxed mb-8">
                             Use the form below to send me a detailed message. 
                             I strive to respond to all messages within 24 hours.
                         </p>
                         
                     </div>
 
-                    <div ref={formRef} className="bg-gradient-to-br from-white/5 to-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
+                    <div ref={formRef} className="bg-[#FAF1E6] text-[#08553d] rounded-2xl p-8 backdrop-blur-sm border border-white/10">
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
@@ -289,7 +289,7 @@ export default function Contact() {
                                         onFocus={handleInputFocus}
                                         onBlur={handleInputBlur}
                                         required
-                                        className="w-full px-4 py-3 bg-black/50 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none transition-colors text-white placeholder-gray-400"
+                                        className="w-full px-4 py-3 bg-transparent border border-[#08553d]/25 rounded-lg focus:border-[#08553d] focus:outline-none transition-colors text-[#08553d] placeholder-[#08553d]/50"
                                         placeholder="Your name"
                                     />
                                 </div>
@@ -306,7 +306,7 @@ export default function Contact() {
                                         onFocus={handleInputFocus}
                                         onBlur={handleInputBlur}
                                         required
-                                        className="w-full px-4 py-3 bg-black/50 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none transition-colors text-white placeholder-gray-400"
+                                        className="w-full px-4 py-3 bg-transparent border border-[#08553d]/25 rounded-lg focus:border-[#08553d] focus:outline-none transition-colors text-[#08553d] placeholder-[#08553d]/50"
                                         placeholder="your@email.com"
                                     />
                                 </div>
@@ -325,7 +325,7 @@ export default function Contact() {
                                     onBlur={handleInputBlur}
                                     required
                                     rows={6}
-                                    className="w-full px-4 py-3 bg-black/50 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none transition-colors text-white placeholder-gray-400 resize-none"
+                                    className="w-full px-4 py-3 bg-transparent border border-[#08553d]/25 rounded-lg focus:border-[#08553d] focus:outline-none transition-colors text-[#08553d] placeholder-[#08553d]/50 resize-none"
                                     placeholder="Describe your project, your needs or ask your questions..."
                                 />
                             </div>
