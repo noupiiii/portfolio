@@ -35,26 +35,24 @@ export default function Navbar() {
     }, [])
 
     return (
-        <nav className="flex items-center justify-between px-24 py-4 fixed top-0 w-full z-10 overflow-hidden">
-            <ul className="flex items-center gap-4">
-                <li ref={(el) => navItemsRefs.current[0] = el}>
+        <nav className="flex items-center justify-between px-24 py-4 fixed top-0 w-full z-10 overflow-hidden">            <ul className="flex items-center gap-4">
+                <li ref={(el) => { navItemsRefs.current[0] = el }}>
                     <Link href={"#"} className="hover:text-gray-600 transition-colors">Home</Link>
                 </li>
-                <li ref={(el) => navItemsRefs.current[1] = el}>
+                <li ref={(el) => { navItemsRefs.current[1] = el }}>
                     <Link href={"#"} className="hover:text-gray-600 transition-colors">About</Link>
                 </li>
-                <li ref={(el) => navItemsRefs.current[2] = el}>
+                <li ref={(el) => { navItemsRefs.current[2] = el }}>
                     <Link href={"#"} className="hover:text-gray-600 transition-colors">Projects</Link>
                 </li>
-                <li ref={(el) => navItemsRefs.current[3] = el}>
+                <li ref={(el) => { navItemsRefs.current[3] = el }}>
                     <Link href={"#"} className="hover:text-gray-600 transition-colors">Contact</Link>
-                </li>
-            </ul>
+                </li>            </ul>
             <ul className="flex items-center gap-4">
-                <li ref={(el) => navItemsRefs.current[4] = el}>
+                <li ref={(el) => { navItemsRefs.current[4] = el }}>
                     <Link href={"#"} className="hover:text-gray-600 transition-colors">Github</Link>
                 </li>
-                <li ref={(el) => navItemsRefs.current[5] = el}>
+                <li ref={(el) => { navItemsRefs.current[5] = el }}>
                     <Link href={"#"} className="hover:text-gray-600 transition-colors">Linkedin</Link>
                 </li>
             </ul>

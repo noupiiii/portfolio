@@ -81,9 +81,8 @@ export default function CryptosquarePage() {
                         en temps réel et effectuer des transactions virtuelles.
                     </p>
                     <p className="text-gray-700 mb-4">
-                        Le projet met l'accent sur l'expérience utilisateur avec des graphiques interactifs, 
-                        des données en temps réel via WebSocket, et une architecture scalable permettant 
-                        d'intégrer facilement de nouvelles fonctionnalités.
+                        Le projet met l&apos;accent sur l&apos;expérience utilisateur avec des graphiques interactifs,                        des données en temps réel via WebSocket, et une architecture scalable permettant 
+                        d&apos;intégrer facilement de nouvelles fonctionnalités.
                     </p>
                 </div>
             </div>
@@ -99,9 +98,8 @@ export default function CryptosquarePage() {
                         </p>
                     </div>
                     <div className="bg-gray-50 p-6 rounded-lg">
-                        <h3 className="font-semibold mb-2">Visualisation de données</h3>
-                        <p className="text-gray-700 text-sm">
-                            Création de graphiques interactifs et responsifs pour l'analyse 
+                        <h3 className="font-semibold mb-2">Visualisation de données</h3>                        <p className="text-gray-700 text-sm">
+                            Création de graphiques interactifs et responsifs pour l&apos;analyse 
                             technique des cryptomonnaies.
                         </p>
                     </div>

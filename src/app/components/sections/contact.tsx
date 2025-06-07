@@ -192,8 +192,7 @@ export default function Contact() {
             gsap.fromTo('.error-message', 
                 { opacity: 0, x: -20 },
                 { opacity: 1, x: 0, duration: 0.5, ease: "back.out(1.7)" }
-            )
-        } finally {
+            )        } finally {
             setIsSubmitting(false)
             setTimeout(() => setSubmitStatus('idle'), 5000)
         }
@@ -212,9 +211,9 @@ export default function Contact() {
             scale: 1,
             duration: 0.3,
             ease: "power2.out"
-        })
-    }
+        })    }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const contactMethods = [
         {
             icon: '📧',
@@ -224,11 +223,10 @@ export default function Contact() {
             href: 'mailto:contact@youremail.com',
             gradient: 'from-blue-500/20 to-cyan-500/20',
             hoverColor: 'hover:border-blue-500/50'
-        },
-        {
+        },        {
             icon: '💼',
             title: 'LinkedIn',
-            description: 'Let\'s connect professionally',
+            description: 'Let&apos;s connect professionally',
             value: 'linkedin.com/in/yourname',
             href: 'https://linkedin.com/in/yourname',
             gradient: 'from-blue-600/20 to-blue-700/20',
@@ -353,10 +351,9 @@ export default function Contact() {
                                     </>
                                 )}
                             </button>
-                            
-                            {submitStatus === 'success' && (
+                              {submitStatus === 'success' && (
                                 <div className="success-message bg-green-500/20 border border-green-500/30 rounded-lg p-4 text-green-400 text-sm">
-                                    ✅ Message sent successfully! I'll get back to you soon.
+                                    ✅ Message sent successfully! I&apos;ll get back to you soon.
                                 </div>
                             )}
                             

@@ -154,37 +154,36 @@ export default function Education() {
                         />
                     </div>
                     
-                    {/* Points de la timeline */}
-                    <div ref={(el) => pointRefs.current[0] = el} className="absolute top-0 w-8 h-8 bg-[#08553d] rounded-full transform -translate-x-1/2 border-6 border-[#FAF1E6]" />
-                    <div ref={(el) => pointRefs.current[1] = el} className="absolute top-1/2 w-8 h-8 bg-[#08553d] rounded-full transform -translate-x-1/2 border-6 border-[#FAF1E6]" />
-                    <div ref={(el) => pointRefs.current[2] = el} className="absolute bottom-0 w-8 h-8 bg-[#08553d] rounded-full transform -translate-x-1/2 border-6 border-[#FAF1E6]" />
+                                    {/* Points de la timeline */}
+                    <div ref={(el) => { pointRefs.current[0] = el }} className="absolute top-0 w-8 h-8 bg-[#08553d] rounded-full transform -translate-x-1/2 border-6 border-[#FAF1E6]" />
+                    <div ref={(el) => { pointRefs.current[1] = el }} className="absolute top-1/2 w-8 h-8 bg-[#08553d] rounded-full transform -translate-x-1/2 border-6 border-[#FAF1E6]" />
+                    <div ref={(el) => { pointRefs.current[2] = el }} className="absolute bottom-0 w-8 h-8 bg-[#08553d] rounded-full transform -translate-x-1/2 border-6 border-[#FAF1E6]" />
                 </div>
 
                 {/* Contenu éducation */}
                 <div className="flex flex-col">
                     {/* Master's degree - Gauche */}
-                    <div className="h-96 flex justify-center mx-auto w-96 flex-col -translate-x-96">
-                        <div ref={(el) => educationRefs.current[0] = el}>
+                    <div className="h-96 flex justify-center mx-auto w-96 flex-col -translate-x-96">                        <div ref={(el) => { educationRefs.current[0] = el }}>
                             <h2 className="text-2xl">September 2025</h2>
-                            <h2 className="text-3xl font-bold">Master's degree</h2>
-                            <p className="italic text-2xl">Master's degree in data science & ia</p>
+                            <h2 className="text-3xl font-bold">Master&apos;s degree</h2>
+                            <p className="italic text-2xl">Master&apos;s degree in data science & ia</p>
                             <h3 className="text-2xl">EPSI - Lille</h3>
                         </div>
                     </div>
 
                     {/* Bachelor's degree - Droite */}
                     <div className="h-96 flex justify-center mx-auto w-96 flex-col translate-x-96">
-                        <div ref={(el) => educationRefs.current[1] = el}>
+                        <div ref={(el) => { educationRefs.current[1] = el }}>
                             <h2 className="text-2xl">2022 - 2025</h2>
-                            <h2 className="text-3xl font-bold">University and technology bachelor's degree in computer science</h2>
+                            <h2 className="text-3xl font-bold">University and technology bachelor&apos;s degree in computer science</h2>
                             <p className="italic text-2xl">Development of secure, communicating applications</p>
-                            <h3 className="text-2xl">IUT du Littoral et de la Côte d'Opale</h3>
+                            <h3 className="text-2xl">IUT du Littoral et de la Côte d&apos;Opale</h3>
                         </div>
                     </div>
 
                     {/* Baccalaureate - Gauche */}
                     <div className="h-96 flex justify-center mx-auto w-96 flex-col -translate-x-96">
-                        <div ref={(el) => educationRefs.current[2] = el}>
+                        <div ref={(el) => { educationRefs.current[2] = el }}>
                             <h2 className="text-2xl">2018 - 2022</h2>
                             <h2 className="text-3xl font-bold">Technological baccalaureate</h2>
                             <p className="italic text-2xl">Technical sciences of management and administration</p>
