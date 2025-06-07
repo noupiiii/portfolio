@@ -70,7 +70,7 @@ export default function About() {
     }, [])
 
     return (
-        <div className='bg-[#FAF1E6] text-[#08553d]'>
+        <div className='bg-[#FAF1E6] text-[#08553d]' id='about'>
             <div className='h-48 flex items-center justify-center'>
                 <h2 
                     ref={titleRef}

@@ -60,7 +60,7 @@ export default function Landing() {
     }, [])
 
     return (
-        <div ref={containerRef} className="h-screen items-center justify-center flex flex-col">
+        <div ref={containerRef} className="h-screen items-center justify-center flex flex-col" id="landing">
             <div ref={imageRef} className="h-48 w-48 rounded-full bg-neutral-50 overflow-hidden flex items-center justify-center">
                 <Image
                     src="/assets/images/photo-min.jpg"

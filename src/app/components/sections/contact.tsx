@@ -253,7 +253,7 @@ export default function Contact() {
     ]
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen" id='contact'>
             {/* Header Section */}
             <div ref={headerRef} className="h-48 flex items-center justify-center">
                 <h2 ref={headerTitleRef} className="text-6xl font-limelight font-light">Contact</h2>

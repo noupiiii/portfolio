@@ -12,3 +12,7 @@ nav ul li {
 .font-limelight {
   font-family: var(--font-limelight);
 }
+
+html {
+  scroll-behavior: smooth;
+}

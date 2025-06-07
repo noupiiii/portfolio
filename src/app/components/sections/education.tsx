@@ -132,7 +132,7 @@ export default function Education() {
     }, [])
 
     return (
-        <div className=''>
+        <div className='' id='education'>
             <div className='h-48 flex items-center justify-center'>
                 <h2 
                     ref={titleRef}
