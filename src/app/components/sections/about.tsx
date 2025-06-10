@@ -74,14 +74,14 @@ export default function About() {
             <div className='h-48 flex items-center justify-center'>
                 <h2 
                     ref={titleRef}
-                    className="text-6xl font-limelight font-light"
+                    className="font-limelight font-light text-3xl sm:text-4xl lg:text-6xl"
                 >
                     About me
                 </h2>
             </div>            <div className="h-96 flex items-center justify-center">
                 <p 
                     ref={(el) => { textRefs.current[0] = el }}
-                    className="text-3xl w-96"
+                    className="text-xl px-8 lg:text-3xl lg:w-96 lg:px-0"
                 >
                     I&apos;m currently in my final year of BUT informatique and am looking for a work-study position in data science & AI for September 2025.
                 </p>
@@ -89,14 +89,14 @@ export default function About() {
             <div className="h-96 flex items-center justify-center">
                 <p 
                     ref={(el) => { textRefs.current[1] = el }}
-                    className="text-3xl w-96"
+                    className="text-xl px-8 lg:text-3xl lg:w-96 lg:px-0"
                 >
                     Originally from Calais, a town steeped in history, I&apos;m currently developing a community solution for worldwide archive storage.
                 </p>
             </div>            <div className="h-96 flex items-center justify-center">
                 <p 
                     ref={(el) => { textRefs.current[2] = el }}
-                    className="text-3xl w-96"
+                    className="text-xl px-8 lg:text-3xl lg:w-96 lg:px-0"
                 >
                     Apart from the wonderful world of computing, I go to the gym and do some swimming.
                 </p>
