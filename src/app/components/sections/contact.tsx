@@ -14,12 +14,13 @@ export default function Contact() {
         message: ''
     })
     const [isSubmitting, setIsSubmitting] = useState(false)
-    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')    // Refs for animations
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+    
+    // Refs for animations
     const headerRef = useRef<HTMLDivElement>(null)
     const headerTitleRef = useRef<HTMLHeadingElement>(null)
     const leftContentRef = useRef<HTMLDivElement>(null)
     const formRef = useRef<HTMLDivElement>(null)
-    const featureItemsRef = useRef<HTMLDivElement[]>([])
     const titleRef = useRef<HTMLHeadingElement>(null)
 
     useEffect(() => {
@@ -130,29 +131,7 @@ export default function Contact() {
                         start: isMobile ? "top 85%" : "top 80%",
                         end: isMobile ? "bottom 40%" : "bottom 20%",
                         toggleActions: "play none none reverse"
-                    }
-                }
-            )
-
-            // Feature items stagger animation
-            gsap.fromTo(featureItemsRef.current,
-                {
-                    opacity: 0,
-                    y: 30
-                },
-                {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.8,
-                    stagger: 0.2,
-                    ease: "power3.out",
-                    scrollTrigger: {
-                        trigger: featureItemsRef.current[0],
-                        start: "top 80%",
-                        end: "bottom 20%",
-                        toggleActions: "play none none reverse"
-                    }
-                }
+                    }                }
             )
         })
 

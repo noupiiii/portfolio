@@ -35,13 +35,19 @@ export default function Projects() {
                                             <span className="px-2 sm:px-3 py-1 bg-[#FAF1E6]/10 backdrop-blur-sm border border-[#FAF1E6]/30 rounded-full text-[#FAF1E6] text-xs font-medium">NuxtJS</span>
                                             <span className="px-2 sm:px-3 py-1 bg-[#FAF1E6]/10 backdrop-blur-sm border border-[#FAF1E6]/30 rounded-full text-[#FAF1E6] text-xs font-medium">Node.js</span>
                                             <span className="px-2 sm:px-3 py-1 bg-[#FAF1E6]/10 backdrop-blur-sm border border-[#FAF1E6]/30 rounded-full text-[#FAF1E6] text-xs font-medium">MongoDB</span>
-                                        </div>
-                                        <div className="hidden sm:flex flex-col sm:flex-row gap-2 sm:gap-4">
+                                        </div>                                        <div className="hidden sm:flex flex-col sm:flex-row gap-2 sm:gap-4">
                                             <span className="inline-flex items-center justify-center px-3 sm:px-4 py-2 bg-[#FAF1E6] text-[#08553d] rounded-lg font-medium text-sm hover:bg-white hover:shadow-lg transition-all duration-300">
                                                 Live Demo
                                             </span>
-                                            <Link href={"https://github.com/noupiiii/CryptoSquare"} target='_blank' className="inline-flex items-center justify-center px-3 sm:px-4 py-2 border border-[#FAF1E6]/30 text-[#FAF1E6] rounded-lg font-medium text-sm hover:bg-[#FAF1E6]/20 hover:border-[#FAF1E6]/60 transition-all duration-300">
-                                                Code                                            </Link>
+                                            <span 
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    window.open("https://github.com/noupiiii/CryptoSquare", "_blank");
+                                                }}
+                                                className="inline-flex items-center justify-center px-3 sm:px-4 py-2 border border-[#FAF1E6]/30 text-[#FAF1E6] rounded-lg font-medium text-sm hover:bg-[#FAF1E6]/20 hover:border-[#FAF1E6]/60 transition-all duration-300 cursor-pointer"
+                                            >
+                                                Code
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
